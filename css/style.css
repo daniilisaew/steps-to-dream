@@ -1,0 +1,21 @@
+body {
+	background: url(../img/background.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+.container{
+font-family: 'Overpass', sans-serif;
+	font-size: 23px;
+	height: 170px;
+	width: 300px;
+ margin-top: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+.btn , input {
+
+	margin-top: 10px;
+	width: 300px;
+	height: 50px;
+}

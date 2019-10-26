@@ -1,0 +1,11 @@
+.form {
+	height: 120px;
+	width: 120px;
+	margin: 0 auto; 
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+}
+.form a {
+	color: red;
+}
