@@ -1,15 +1,17 @@
 <?php
-include 'conect.php';
-include 'test.php';
-
-
 
 
 if (!empty($_POST['login']) AND !empty($_POST['pass'])) 
 	{
-	$loginhash = md5($_POST['login']);	
+
+	$login = $_POST['login'];	
 	$passhash = md5($_POST['pass']);
-$query = "INSERT INTO test (login, pass) VALUES('$loginhash', '$passhash')";
+
+
+$clogin = mysqli_real_escape_string($mysql, $login);
+$cpass - mysqli_real_escape_string($mysql, $passhash);
+
+$query = "INSERT INTO test (login, pass) VALUES('$clogin', '$cpass')";
 $result = mysqli_query($mysql, $query);
 
 
